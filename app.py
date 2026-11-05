@@ -10,7 +10,7 @@ from controllers.menu_controller import menu_bp
 from controllers.admin_controller import admin_bp  # NUEVO
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, static_folder='public/static')
     app.config.from_object('config.Config')
     
     # Configurar secret key para sessions
