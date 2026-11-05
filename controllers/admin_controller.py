@@ -15,7 +15,7 @@ from datetime import datetime
 admin_bp = Blueprint('admin', __name__)
 
 # Configuración de uploads
-UPLOAD_FOLDER = 'static/images'
+UPLOAD_FOLDER = 'public/static/images'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'webp'}
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
 
